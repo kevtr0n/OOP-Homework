@@ -136,7 +136,43 @@ public class Patron extends EntityBase
             updateStatusMessage = "Error in installing patron data in database!";
         }
     }
-	
+
+    public String getPatronId() {
+        return persistentState.getProperty("patronId");
+    }
+
+    public String getName() {
+        return persistentState.getProperty("name");
+    }
+
+    public String getAddress() {
+        return persistentState.getProperty("address");
+    }
+
+    public String getCity() {
+        return persistentState.getProperty("city");
+    }
+
+    public String getStateCode() {
+        return persistentState.getProperty("stateCode");
+    }
+
+    public String getZip() {
+        return persistentState.getProperty("zip");
+    }
+
+    public String getEmail() {
+        return persistentState.getProperty("email");
+    }
+
+    public String getDateOfBirth() {
+        return persistentState.getProperty("dateOfBirth");
+    }
+
+    public String getStatus() {
+        return persistentState.getProperty("status");
+    }
+
 	public String toString()
 	{
 		return persistentState.getProperty("patronId") + "; " + 

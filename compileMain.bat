@@ -1,1 +1,0 @@
-javac  –classpath classes;. Main.java
