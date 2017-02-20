@@ -129,15 +129,31 @@ public class Book extends EntityBase {
         }
     }
 
-    public String toString() {
-        return persistentState.getProperty("bookId") + "; " +
-                persistentState.getProperty("title") + "; " +
-                persistentState.getProperty("author") + "; " +
-                persistentState.getProperty("pubYear") + "; " +
-                persistentState.getProperty("status");
+    public String getBookId() {
+        return persistentState.getProperty("bookId");
     }
 
-    public String getbookId() {
-        return persistentState.getProperty("bookId");
+    public String getAuthor() {
+        return persistentState.getProperty("author");
+    }
+
+    public String getTitle() {
+        return persistentState.getProperty("title");
+    }
+
+    public String getPubYear() {
+        return persistentState.getProperty("pubYear");
+    }
+
+    public String getStatus() {
+        return persistentState.getProperty("status");
+    }
+
+    public String toString() {
+        return persistentState.getProperty("bookId") + "; " +
+                persistentState.getProperty("author") + "; " +
+                persistentState.getProperty("title") + "; " +
+                persistentState.getProperty("pubYear") + "; " +
+                persistentState.getProperty("status");
     }
 }
