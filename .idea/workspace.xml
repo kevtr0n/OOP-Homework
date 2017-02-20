@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4c972ba5-723d-484a-8cdd-420687b1d231" name="Default" comment="" />
+    <list default="true" id="4c972ba5-723d-484a-8cdd-420687b1d231" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/OOP-Homework/model/Book.class" afterPath="$PROJECT_DIR$/out/production/OOP-Homework/model/Book.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/OOP-Homework/model/Patron.class" afterPath="$PROJECT_DIR$/out/production/OOP-Homework/model/Patron.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -67,7 +71,7 @@
         <entry file="file://$PROJECT_DIR$/src/java/userinterface/SearchBookController.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="385">
-              <caret line="32" column="13" lean-forward="true" selection-start-line="32" selection-start-column="13" selection-end-line="32" selection-end-column="13" />
+              <caret line="32" column="13" lean-forward="false" selection-start-line="32" selection-start-column="13" selection-end-line="32" selection-end-column="13" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -635,12 +639,12 @@
       <workItem from="1487086850634" duration="8197000" />
       <workItem from="1487109787861" duration="612000" />
       <workItem from="1487282788842" duration="9204000" />
-      <workItem from="1487619262361" duration="7501000" />
+      <workItem from="1487619262361" duration="7771000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="39615000" />
+    <option name="totallyTimeSpent" value="39885000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="0" width="1932" height="1038" extended-state="0" />
@@ -1088,7 +1092,7 @@
     <entry file="file://$PROJECT_DIR$/src/java/userinterface/SearchBookController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="385">
-          <caret line="32" column="13" lean-forward="true" selection-start-line="32" selection-start-column="13" selection-end-line="32" selection-end-column="13" />
+          <caret line="32" column="13" lean-forward="false" selection-start-line="32" selection-start-column="13" selection-end-line="32" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
