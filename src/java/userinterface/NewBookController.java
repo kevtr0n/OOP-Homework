@@ -51,6 +51,7 @@ public class NewBookController implements Initializable {
                 return;
             }
         }
+
         alertMessage.setText("The book " + title.getText() + " have been submit.");
         for (TextField textField : textFieldList) {
             textField.clear();
