@@ -8,12 +8,11 @@
 
 <!-- onAction="#menuClickListener" -->
 
-<Pane maxHeight="750.0" maxWidth="1150.0" minHeight="565.0" minWidth="840.0" prefHeight="750.0" prefWidth="1150.0"
+<Pane prefHeight="750.0" prefWidth="1150.0"
       xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1"
       fx:controller="userinterface.MainViewController">
     <children>
-        <AnchorPane maxHeight="754.0" maxWidth="225.0" minHeight="565.0" minWidth="222.0" prefHeight="754.0"
-                    prefWidth="222.0">
+        <AnchorPane prefHeight="750.0" prefWidth="225.0">
             <children>
                 <Button id="newBook" fx:id="newBook" layoutX="0" layoutY="000.00" mnemonicParsing="false"
                         onAction="#menuClickListener" prefHeight="141.25" prefWidth="225.0"
