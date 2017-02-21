@@ -112,5 +112,5 @@ public class BookCollection extends EntityBase
         }
         return persistentState.getProperty(key);
     }
-	
+
 }

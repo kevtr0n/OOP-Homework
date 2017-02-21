@@ -22,7 +22,7 @@ public class NewPatronController implements Initializable {
 
     ObservableList<String> statusList = FXCollections.observableArrayList("Active", "Inactive");
     final private String[] patronArray = {"patronId", "name", "address", "city", "stateCode",
-                                          "zip", "email", "dateOfBirth", "status"};
+            "zip", "email", "dateOfBirth", "status"};
     @FXML
     private TextField name;
     @FXML
@@ -78,7 +78,7 @@ public class NewPatronController implements Initializable {
         System.out.println("Props: " + props.toString());
         Patron newPatron = new Patron(props);
         newPatron.update();
-        alertMessage.setText("The patron " + address.getText() + " has been submitted.");
+        alertMessage.setText("The patron '" + name.getText() + "' has been submitted.");
         for (TextField textField : textFieldList) {
             textField.clear();
         }
