@@ -10,10 +10,12 @@ import javafx.scene.control.ListView;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.cell.PropertyValueFactory;
 import model.Book;
+import model.BookCollection;
 import model.Patron;
 
 import java.net.URL;
 import java.util.ResourceBundle;
+import java.util.Vector;
 
 /**
  * Created by BrownD on 19/02/2017.
