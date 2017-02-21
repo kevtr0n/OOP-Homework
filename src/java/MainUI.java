@@ -24,6 +24,7 @@ public class MainUI extends Application {
 
         primaryStage.setScene(scene);
         primaryStage.setTitle("Brockport Library");
+        primaryStage.setResizable(false);
         primaryStage.show();
     }
 }
