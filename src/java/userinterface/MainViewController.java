@@ -7,6 +7,7 @@ import javafx.fxml.Initializable;
 import javafx.scene.Parent;
 import javafx.scene.control.Button;
 import javafx.scene.layout.AnchorPane;
+import javafx.scene.layout.Pane;
 import javafx.scene.layout.StackPane;
 
 import java.io.IOException;
@@ -19,7 +20,7 @@ import java.util.ResourceBundle;
 public class MainViewController implements Initializable {
 
     @FXML
-    private AnchorPane root;
+    private Pane root;
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {

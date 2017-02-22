@@ -1,54 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
-<?import javafx.scene.text.*?>
 <?import javafx.scene.control.Button?>
-<?import javafx.scene.control.SplitPane?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
 <!-- onAction="#menuClickListener" -->
-<SplitPane dividerPositions="0.2698224852071006" maxHeight="565.0" maxWidth="840.0" minHeight="565.0" minWidth="840.0"
-           prefHeight="565.0" prefWidth="631.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1"
-           fx:controller="userinterface.MainViewController">
-    <items>
-        <AnchorPane maxHeight="565.0" maxWidth="225.0" minHeight="565.0" minWidth="225.0" prefHeight="565.0"
-                    prefWidth="225.0">
+
+<Pane prefHeight="750.0" prefWidth="1150.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="userinterface.MainViewController">
+    <children>
+        <AnchorPane prefHeight="734.0" prefWidth="225.0">
             <children>
-                <Button id="newBook" fx:id="newBook" layoutX="0" layoutY="000.00" mnemonicParsing="false"
-                        prefHeight="141.25" prefWidth="225.0" style="-fx-background-color: #f44336;"
-                        text="Insert New Book" textFill="WHITE" onAction="#menuClickListener"/>
-                <Button id="newPatron" fx:id="newPatron" layoutX="0" layoutY="141.25" mnemonicParsing="false"
-                        prefHeight="141.25" prefWidth="225.0" style="-fx-background-color: #2196f3;"
-                        text="Insert New Patron" textFill="WHITE" onAction="#menuClickListener"/>
-                <Button id="searchBook" fx:id="searchBook" layoutY="282.5" mnemonicParsing="false" prefHeight="141.25"
-                        prefWidth="225.0" style="-fx-background-color: #8bc34a;" text="Search Book" textFill="WHITE"
-                        onAction="#menuClickListener"/>
-                <Button id="searchPatron" fx:id="searchPatron" layoutX="0" layoutY="423.75" mnemonicParsing="false"
-                        prefHeight="141.25" prefWidth="225.0" style="-fx-background-color: #ffc107;"
-                        text="Search Patron" textFill="WHITE" onAction="#menuClickListener"/>
+                <Button id="newBook" fx:id="newBook" layoutX="0" layoutY="000.00" mnemonicParsing="false" onAction="#menuClickListener" prefHeight="192.5" prefWidth="225.0" style="-fx-background-color: #f44336;" text="Insert New Book" textFill="WHITE" />
+                <Button id="newPatron" fx:id="newPatron" layoutY="192.5" mnemonicParsing="false" onAction="#menuClickListener" prefHeight="192.5" prefWidth="225.0" style="-fx-background-color: #2196f3;" text="Insert New Patron" textFill="WHITE" />
+                <Button id="searchBook" fx:id="searchBook" layoutY="380" mnemonicParsing="false" onAction="#menuClickListener" prefHeight="192.5" prefWidth="225.0" style="-fx-background-color: #8bc34a;" text="Search Book" textFill="WHITE" />
+                <Button id="searchPatron" fx:id="searchPatron" layoutY="567.5" mnemonicParsing="false" onAction="#menuClickListener" prefHeight="192.5" prefWidth="225.0" style="-fx-background-color: #ffc107;" text="Search Patron" textFill="WHITE" />
             </children>
         </AnchorPane>
-        <AnchorPane fx:id="root" maxHeight="331.0" maxWidth="615.0" minHeight="565.0" minWidth="615.0"
-                    prefHeight="331.0" prefWidth="406.0">
+
+        <Pane fx:id="root" layoutX="225.0" prefHeight="750.0" prefWidth="926.0">
             <children>
-                <Pane fx:id="panel" prefHeight="565.0" prefWidth="615.0">
-                    <children>
-                        <Text layoutX="104.0" layoutY="213.0" strokeType="OUTSIDE" strokeWidth="0.0"
-                              text="Brockport Library System" textAlignment="CENTER" wrappingWidth="406.0">
-                            <font>
-                                <Font size="42.0"/>
-                            </font>
-                        </Text>
-                        <Text layoutX="362.0" layoutY="553.0" strokeType="OUTSIDE" strokeWidth="0.0"
-                              text="by Jc Mbappe - Kevin Patrick" wrappingWidth="250.5029296875"/>
-                    </children>
-                </Pane>
+                <Text layoutX="284.0" layoutY="278.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Brockport Library System" textAlignment="CENTER" wrappingWidth="406.0">
+                    <font>
+                        <Font size="42.0" />
+                    </font>
+                </Text>
+                <Text layoutX="661.0" layoutY="731.0" strokeType="OUTSIDE" strokeWidth="0.0" text="by Jc Mbappe - Kevin Hayden" textAlignment="RIGHT" wrappingWidth="250.5029296875" />
             </children>
-        </AnchorPane>
-    </items>
-</SplitPane>
+        </Pane>
+    </children>
+</Pane>

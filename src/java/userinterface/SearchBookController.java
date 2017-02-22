@@ -39,9 +39,7 @@ public class SearchBookController extends SearchController {
         for (String property : properties) {
             column = new TableColumn(property);
             column.setMinWidth(100);
-            column.setCellValueFactory(
-                    new PropertyValueFactory<Book, String>(property));
-
+            column.setCellValueFactory(new PropertyValueFactory<Book, String>(property));
             tableView.getColumns().add(column);
         }
     }

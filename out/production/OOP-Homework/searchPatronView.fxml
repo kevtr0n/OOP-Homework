@@ -14,21 +14,18 @@
 <?import javafx.scene.control.ListView?>
 <?import javafx.scene.control.ChoiceBox?>
 <?import javafx.scene.control.TableView?>
-<AnchorPane maxHeight="331.0" maxWidth="615.0" minHeight="565.0" minWidth="615.0" prefHeight="331.0" prefWidth="406.0"
-            xmlns="http://javafx.com/javafx/8.0.112" xmlns:fx="http://javafx.com/fxml/1" fx:controller="userinterface.SearchPatronController">
+<AnchorPane prefHeight="750.0" prefWidth="926" xmlns="http://javafx.com/javafx/8.0.112" xmlns:fx="http://javafx.com/fxml/1" fx:controller="userinterface.SearchPatronController">
     <children>
-        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ffc107" height="62.0" stroke="#ffc107" strokeType="INSIDE"
-                   width="615.0"/>
-        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ffc107" height="510.0" layoutX="-1.0" layoutY="56.0"
-                   stroke="#ffc107" strokeType="INSIDE" width="11.0"/>
+        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ffc107" height="62.0" layoutX="-1.0" stroke="#ffc107" strokeType="INSIDE" width="930.0"/>
+        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ffc107" height="758.0" layoutX="-1.0" layoutY="56.0" stroke="#ffc107" strokeType="INSIDE" width="11.0"/>
 
-        <Text fill="WHITE" layoutX="209.0" layoutY="47.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Search Patron by:">
+        <Text fill="WHITE" layoutY="47.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Search Patron by:" wrappingWidth="926" textAlignment="CENTER">
             <font>
                 <Font size="40.0"/>
             </font>
         </Text>
 
-        <GridPane prefHeight="125.0" prefWidth="615.0">
+        <GridPane prefHeight="125.0" prefWidth="926.0">
             <columnConstraints>
                 <ColumnConstraints hgrow="SOMETIMES" minWidth="15.0" prefWidth="15.0"/>
                 <ColumnConstraints hgrow="SOMETIMES" minWidth="150.0" prefWidth="150.0"/>
@@ -47,6 +44,6 @@
                         GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER"/>
             </children>
         </GridPane>
-        <TableView fx:id="tableView" layoutX="9.0" layoutY="125.0" prefHeight="440.0" prefWidth="600.0"/>
+        <TableView fx:id="tableView" layoutX="9.0" layoutY="125.0" prefHeight="600.0" prefWidth="922.0"/>
     </children>
 </AnchorPane>
