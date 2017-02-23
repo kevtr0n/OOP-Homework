@@ -5,11 +5,11 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.ChoiceBox;
-import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
+import javafx.scene.control.TextField;
 
+import javax.xml.soap.Text;
 import java.net.URL;
-import java.util.Properties;
 import java.util.ResourceBundle;
 
 /**
@@ -18,10 +18,13 @@ import java.util.ResourceBundle;
 public abstract class SearchController implements Initializable {
 
     @FXML
-    private ChoiceBox<String> searchChoice;
+    protected ChoiceBox<String> searchChoice;
 
     @FXML
     protected TableView tableView;
+
+    @FXML
+    protected TextField searchField;
 
     ObservableList<String> properties;
 
@@ -34,10 +37,15 @@ public abstract class SearchController implements Initializable {
     }
 
     public void search(ActionEvent event) {
+        ObservableList observableList = querySelector();
+        if (observableList != null) {
+            tableView.setItems(observableList);
+        }
     }
-
 
     protected abstract ObservableList<String> itemsSearchChoiceArray();
 
     protected abstract void setTableView();
+
+    protected abstract ObservableList querySelector();
 }

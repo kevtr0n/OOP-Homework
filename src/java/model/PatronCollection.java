@@ -44,6 +44,31 @@ public class PatronCollection extends EntityBase {
         return patrons;
     }
 
+    public Vector findPatronsByPatronId(String patronId) {
+        String query = "SELECT * FROM " + myTableName + " WHERE (patronId = " + patronId + ")";
+        return runQuery(query);
+    }
+
+    public Vector findPatronsByAddress(String address) {
+        String query = "SELECT * FROM " + myTableName + " WHERE (address = " + address + ")";
+        return runQuery(query);
+    }
+
+    public Vector findPatronsByEmail(String email) {
+        String query = "SELECT * FROM " + myTableName + " WHERE (email = " + email + ")";
+        return runQuery(query);
+    }
+
+    public Vector findPatronsByStatus(String status) {
+        String query = "SELECT * FROM " + myTableName + " WHERE (status = " + status + ")";
+        return runQuery(query);
+    }
+
+    public Vector findPatronsByDateOfBirth(String dateOfBirth) {
+        String query = "SELECT * FROM " + myTableName + " WHERE (birthDate = " + dateOfBirth + ")";
+        return runQuery(query);
+    }
+
     public Vector findPatronsOlderThan(String date) {
         String query = "SELECT * FROM " + myTableName + " WHERE (dateOfBirth < " + date + ")";
         return runQuery(query);

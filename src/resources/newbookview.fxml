@@ -16,7 +16,7 @@
         <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#f44336" layoutX="-1.0" height="62.0" stroke="#f44336" strokeType="INSIDE" width="930.0" />
         <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#f44336" height="762.0" layoutX="-1.0" stroke="#f44336" strokeType="INSIDE" width="11.0" />
 
-        <Text fill="WHITE" layoutY="47.0" strokeType="OUTSIDE" strokeWidth="0.0" text="New Books" textAlignment="CENTER" wrappingWidth="926">
+        <Text fill="WHITE" layoutY="47.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Insert New Book" textAlignment="CENTER" wrappingWidth="926">
             <font>
                 <Font size="40.0" />
             </font>

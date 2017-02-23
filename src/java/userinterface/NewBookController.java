@@ -52,8 +52,13 @@ public class NewBookController implements Initializable {
         Properties props = new Properties();
 
         for (TextField textField : textFieldList) {
+            String year = pubYear.toString().substring(0, 3);
+            int checkYear = Integer.parseInt(year);
             if (textField.getText().equals("")) {
                 alertMessage.setText("Please complete all text fields to submit a book.");
+                return;
+            } else if (checkYear > 2017 && checkYear < 1800 ) {
+                alertMessage.setText("The publication year must be within 1800 - 2017.");
                 return;
             } else {
                 props.put(textField.getId(), textField.getText());

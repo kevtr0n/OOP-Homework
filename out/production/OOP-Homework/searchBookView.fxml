@@ -14,10 +14,10 @@
 
 <AnchorPane prefHeight="750.0" prefWidth="926.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="userinterface.SearchBookController">
     <children>
-        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#8bc34a" layoutX="-1.0" height="62.0" stroke="#8bc34a" strokeType="INSIDE" width="930.0" />
+        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#8bc34a" height="62.0" layoutX="-1.0" stroke="#8bc34a" strokeType="INSIDE" width="930.0" />
         <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#8bc34a" height="762.0" layoutX="-1.0" layoutY="56.0" stroke="#8bc34a" strokeType="INSIDE" width="10.0" />
 
-        <Text fill="WHITE"  layoutY="47.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Search Books by:" textAlignment="CENTER" wrappingWidth="926">
+        <Text fill="WHITE" layoutY="47.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Search Books by:" textAlignment="CENTER" wrappingWidth="926">
             <font>
                 <Font size="40.0" />
             </font>
@@ -35,10 +35,11 @@
             </rowConstraints>
             <children>
                 <ChoiceBox id="searchChoice" fx:id="searchChoice" prefWidth="150.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
-                <TextField alignment="CENTER" prefHeight="31.0" prefWidth="390.0" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+                <TextField fx:id="searchField" prefHeight="31.0" prefWidth="390.0" GridPane.columnIndex="2" GridPane.rowIndex="1" />
                 <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#search" prefHeight="31.0" prefWidth="102.0" text="Search" textAlignment="CENTER" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER" />
             </children>
         </GridPane>
         <TableView fx:id="tableView" layoutX="9.0" layoutY="125.0" prefHeight="600.0" prefWidth="922.0" />
+      <Text layoutX="270.0" layoutY="762.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="400.6708984375" />
     </children>
 </AnchorPane>
