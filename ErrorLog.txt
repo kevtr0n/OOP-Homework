@@ -21,3 +21,38 @@
 [2/20/17 11:42 AM]|Book|insertAutoIncrementalPersistentState|Error|NOTAG|null<SQL Exception: 1064: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1>
 [2/20/17 11:57 AM]|Book|insertAutoIncrementalPersistentState|Error|NOTAG|null<SQL Exception: 1064: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1>
 [2/20/17 11:57 AM]|Book|insertAutoIncrementalPersistentState|Error|NOTAG|null<SQL Exception: 1064: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1>
+[2/23/17 12:36 PM]|PatronCollection|getSelectQueryResult|Error|NOTAG|null<SQL Exception: 1064: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1>
+[2/23/17 12:36 PM]|PatronCollection|getSelectQueryResult|Error|NOTAG|null<SQL Exception: 1064: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1>
+[2/23/17 12:36 PM]|PatronCollection|getSelectQueryResult|Error|NOTAG|null<SQL Exception: 1064: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1>
+[2/23/17 2:09 PM]|BookCollection|getSelectQueryResult|Error|NOTAG|null<SQL Exception: 1054: Unknown column 'patronId' in 'where clause'>
+[2/23/17 2:10 PM]|BookCollection|getSelectQueryResult|Error|NOTAG|null<SQL Exception: 1054: Unknown column 'patronId' in 'where clause'>
+[2/23/17 2:10 PM]|BookCollection|getSelectQueryResult|Error|NOTAG|null<SQL Exception: 1054: Unknown column 'patronId' in 'where clause'>
+[2/23/17 2:10 PM]|BookCollection|getSelectQueryResult|Error|NOTAG|null<SQL Exception: 1054: Unknown column 'patronId' in 'where clause'>
+[2/23/17 2:10 PM]|BookCollection|getSelectQueryResult|Error|NOTAG|null<SQL Exception: 1054: Unknown column 'patronId' in 'where clause'>
+[2/23/17 2:10 PM]|BookCollection|getSelectQueryResult|Error|NOTAG|null<SQL Exception: 1054: Unknown column 'patronId' in 'where clause'>
+[2/23/17 2:10 PM]|BookCollection|getSelectQueryResult|Error|NOTAG|null<SQL Exception: 1054: Unknown column 'patronId' in 'where clause'>
+[2/23/17 2:12 PM]|BookCollection|getSelectQueryResult|Error|NOTAG|null<SQL Exception: 1054: Unknown column 'patronId' in 'where clause'>
+[2/23/17 2:12 PM]|BookCollection|getSelectQueryResult|Error|NOTAG|null<SQL Exception: 1054: Unknown column 'patronId' in 'where clause'>
+[2/23/17 2:12 PM]|BookCollection|getSelectQueryResult|Error|NOTAG|null<SQL Exception: 1054: Unknown column 'patronId' in 'where clause'>
+[2/23/17 2:12 PM]|BookCollection|getSelectQueryResult|Error|NOTAG|null<SQL Exception: 1054: Unknown column 'patronId' in 'where clause'>
+[2/23/17 2:17 PM]|BookCollection|getSelectQueryResult|Error|NOTAG|null<SQL Exception: 1054: Unknown column 'patronId' in 'where clause'>
+[2/23/17 2:18 PM]|BookCollection|getSelectQueryResult|Error|NOTAG|null<SQL Exception: 1054: Unknown column 'patronId' in 'where clause'>
+[2/23/17 2:32 PM]|BookCollection|getSelectQueryResult|Error|NOTAG|null<SQL Exception: 1054: Unknown column 'active' in 'where clause'>
+[2/23/17 2:32 PM]|BookCollection|getSelectQueryResult|Error|NOTAG|null<SQL Exception: 1054: Unknown column 'kevin' in 'where clause'>
+[2/23/17 2:37 PM]|BookCollection|getSelectQueryResult|Error|NOTAG|null<SQL Exception: 1054: Unknown column 'active' in 'where clause'>
+[2/23/17 2:38 PM]|BookCollection|getSelectQueryResult|Error|NOTAG|null<SQL Exception: 1054: Unknown column 'Active' in 'where clause'>
+[2/23/17 2:39 PM]|BookCollection|getSelectQueryResult|Error|NOTAG|null<SQL Exception: 1054: Unknown column 'Active' in 'where clause'>
+[2/23/17 2:39 PM]|BookCollection|getSelectQueryResult|Error|NOTAG|null<SQL Exception: 1054: Unknown column 'Active' in 'where clause'>
+[2/23/17 2:40 PM]|BookCollection|getSelectQueryResult|Error|NOTAG|null<SQL Exception: 1054: Unknown column 'Inactive' in 'where clause'>
+[2/23/17 2:43 PM]|PatronCollection|getSelectQueryResult|Error|NOTAG|null<SQL Exception: 1054: Unknown column 'active' in 'where clause'>
+[2/23/17 2:47 PM]|PatronCollection|getSelectQueryResult|Error|NOTAG|null<SQL Exception: 1064: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'new campus drive) ORDER BY name ASC' at line 1>
+[2/23/17 2:48 PM]|PatronCollection|getSelectQueryResult|Error|NOTAG|null<SQL Exception: 1064: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'new campus Drive) ORDER BY name ASC' at line 1>
+[2/23/17 2:57 PM]|PatronCollection|getSelectQueryResult|Error|NOTAG|null<SQL Exception: 1064: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'Russell Ave) ORDER BY name ASC' at line 1>
+[2/23/17 2:58 PM]|PatronCollection|getSelectQueryResult|Error|NOTAG|null<SQL Exception: 1064: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'Wolcott Avenue) ORDER BY name ASC' at line 1>
+[2/23/17 2:58 PM]|PatronCollection|getSelectQueryResult|Error|NOTAG|null<SQL Exception: 1064: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'new campus drive) ORDER BY name ASC' at line 1>
+[2/23/17 3:03 PM]|PatronCollection|getSelectQueryResult|Error|NOTAG|null<SQL Exception: 1054: Unknown column 'kevp' in 'where clause'>
+[2/23/17 3:03 PM]|PatronCollection|getSelectQueryResult|Error|NOTAG|null<SQL Exception: 1064: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '@gmail.com) ORDER BY name ASC' at line 1>
+[2/23/17 3:04 PM]|PatronCollection|getSelectQueryResult|Error|NOTAG|null<SQL Exception: 1054: Unknown column 'active' in 'where clause'>
+[2/23/17 3:05 PM]|PatronCollection|getSelectQueryResult|Error|NOTAG|null<SQL Exception: 1054: Unknown column 'inactive' in 'where clause'>
+[2/23/17 3:16 PM]|PatronCollection|getSelectQueryResult|Error|NOTAG|null<SQL Exception: 1054: Unknown column 'birthDate' in 'where clause'>
+[2/23/17 3:17 PM]|PatronCollection|getSelectQueryResult|Error|NOTAG|null<SQL Exception: 1054: Unknown column 'birthDate' in 'where clause'>

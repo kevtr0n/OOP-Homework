@@ -12,7 +12,7 @@ import model.PatronCollection;
 import java.util.Vector;
 
 /**
- * Created by BrownD on 19/02/2017.
+ * Created by BrownD and Kevin Hayden on 19/02/2017.
  */
 public class SearchPatronController extends SearchController {
 
@@ -54,113 +54,123 @@ public class SearchPatronController extends SearchController {
 
             case "patronId":
                 String patronId = searchField.getText();
-                if (patronId == null)
-                    alertMessage.setText("Please enter a Patron ID in the search field.");
-                if (patronId != null) {
+                if (patronId == null || patronId.equals("") || !isNumeric(patronId)) {
+                    alertMessage.setText("Please enter a numeric Patron ID in the search field.");
+                    searchField.clear();
+                    break;
+                } else {
                     PatronCollection patronCol = new PatronCollection();
                     Vector patrons = patronCol.findPatronsByPatronId(patronId);
+                    searchField.clear();
                     return FXCollections.observableList(patrons);
                 }
-                searchField.clear();
-                break;
 
             case "name":
                 String name = searchField.getText();
-                if (name == null)
+                if (name == null || name.equals("")) {
                     alertMessage.setText("Please enter a name in the search field.");
-                if (name != null) {
+                    searchField.clear();
+                    break;
+                } else {
                     PatronCollection patronCol = new PatronCollection();
                     Vector patrons = patronCol.findPatronsWithNameLike(name);
+                    searchField.clear();
                     return FXCollections.observableList(patrons);
                 }
-                searchField.clear();
-                break;
 
             case "address":
                 String address = searchField.getText();
-                if (address == null)
-                    alertMessage.setText("Please enter address in search field.");
-                if (address != null) {
+                if (address == null || address.equals("")) {
+                    alertMessage.setText("Please enter an address in search field.");
+                    searchField.clear();
+                    break;
+                } else {
                     PatronCollection patronCol = new PatronCollection();
                     Vector patrons = patronCol.findPatronsByAddress(address);
+                    searchField.clear();
                     return FXCollections.observableList(patrons);
                 }
-                searchField.clear();
-                break;
 
             case "city":
                 String city = searchField.getText();
-                if (city == null)
-                    alertMessage.setText("Please enter city in search field.");
-                if (city != null) {
+                if (city == null || city.equals("")) {
+                    alertMessage.setText("Please enter a city in search field.");
+                    searchField.clear();
+                    break;
+                } else {
                     PatronCollection patronCol = new PatronCollection();
                     Vector patrons = patronCol.findPatronsAtCity(city);
+                    searchField.clear();
                     return FXCollections.observableList(patrons);
                 }
-                searchField.clear();
-                break;
 
             case "stateCode":
                 String stateCode = searchField.getText();
-                if (stateCode == null || stateCode.length() != 2)
-                    alertMessage.setText("Please enter state code in format: --.");
-                if (stateCode != null) {
+                if (stateCode == null || stateCode.equals("") || stateCode.length() != 2) {
+                    alertMessage.setText("Please enter a state code in format: --.");
+                    searchField.clear();
+                    break;
+                } else {
                     PatronCollection patronCol = new PatronCollection();
                     Vector patrons = patronCol.findPatronsAtStateCode(stateCode);
+                    searchField.clear();
                     return FXCollections.observableList(patrons);
                 }
-                searchField.clear();
-                break;
 
             case "zip":
                 String zip = searchField.getText();
-                if (zip == null)
-                    alertMessage.setText("Please enter a zip code.");
-                if (!isNumeric(zip) || zip.length() != 5)
-                    alertMessage.setText("Zip must be in the format: -----.");
-                if (isNumeric(zip) && zip != null) {
+                if (zip == null || zip.equals("") || !isNumeric(zip) || zip.length() != 5) {
+                    alertMessage.setText("Please enter a zip code in format: -----");
+                    searchField.clear();
+                    break;
+                } else {
                     PatronCollection patronCol = new PatronCollection();
                     Vector patrons = patronCol.findPatronsAtZipCode(zip);
+                    searchField.clear();
                     return FXCollections.observableList(patrons);
                 }
-                searchField.clear();
-                break;
 
             case "email":
                 String email = searchField.getText();
-                if (email == null)
-                    alertMessage.setText("Please enter an email address.");
-                if (email != null) {
+                if (email == null || email.equals("")) {
+                    alertMessage.setText("Please enter an email address in search field.");
+                    searchField.clear();
+                    break;
+                } else {
                     PatronCollection patronCol = new PatronCollection();
                     Vector patrons = patronCol.findPatronsByEmail(email);
+                    searchField.clear();
                     return FXCollections.observableList(patrons);
                 }
-                searchField.clear();
-                break;
 
             case "dateOfBirth":
                 String dateOfBirth = searchField.getText();
-                if (dateOfBirth == null || dateOfBirth.length() != 10 || dateOfBirth.charAt(4) != '-' || dateOfBirth.charAt(7) != '-')
-                    alertMessage.setText("Please enter date in format in 'yyyy-mm-dd'.");
-                if (dateOfBirth != null && dateOfBirth.length() == 10) {
+                if (dateOfBirth == null || dateOfBirth.equals("")) {
+                    alertMessage.setText("Please enter a date in the search field.");
+                }
+                if (dateOfBirth.length() != 10 || dateOfBirth.charAt(4) != '-' || dateOfBirth.charAt(7) != '-') {
+                    alertMessage.setText("Date '" + dateOfBirth + "' not in format: 'yyyy-mm-dd'.");
+                    searchField.clear();
+                    break;
+                } else {
                     PatronCollection patronCol = new PatronCollection();
                     Vector patrons = patronCol.findPatronsByDateOfBirth(dateOfBirth);
+                    searchField.clear();
                     return FXCollections.observableList(patrons);
                 }
-                searchField.clear();
-                break;
 
             case "status":
                 String status = searchField.getText();
-                if (status == null)
+                if (status == null || status.equals("")) {
                     alertMessage.setText("Please enter either 'Active' or 'Inactive' in the search field");
-                if (status != null) {
+                    searchField.clear();
+                    break;
+                } else {
                     PatronCollection patronCol = new PatronCollection();
                     Vector patrons = patronCol.findPatronsByStatus(status);
+                    searchField.clear();
                     return FXCollections.observableList(patrons);
                 }
-                searchField.clear();
-                break;
         }
         return null;
     }

@@ -64,23 +64,31 @@ public class NewPatronController implements Initializable {
 
     public void submit(ActionEvent actionEvent) {
         Properties props = new Properties();
-
         for (TextField textField : textFieldList) {
             if (textField.getText().equals("")) {
                 alertMessage.setText("Please complete all text fields to submit a patron.");
                 return;
-            } else {
-                props.put(textField.getId(), textField.getText());
             }
+            if (stateCode.getText().length() != 2) {
+                alertMessage.setText("Field: Please enter State in format: --");
+                return;
+            }
+            if (zip.getText().length() != 5) {
+                alertMessage.setText("Field: Please enter Zip in format: -----");
+                return;
+            }
+            if (Integer.parseInt(dateOfBirth.getText().substring(0, 4)) > 1999 ||
+                    Integer.parseInt(dateOfBirth.getText().substring(0, 4)) < 1917) {
+                alertMessage.setText("Field: Patron must be born between 1917-01-01 and 1999-01-01.");
+                return;
+            } else
+                props.put(textField.getId(), textField.getText());
         }
-
         props.put(status.getId(), status.getSelectionModel().getSelectedItem().toString());
-        System.out.println("Props: " + props.toString());
         Patron newPatron = new Patron(props);
         newPatron.update();
-        alertMessage.setText("The patron '" + name.getText() + "' has been submitted.");
-        for (TextField textField : textFieldList) {
+        alertMessage.setText("The patron '" + name.getText() + "' has been successfully submitted.");
+        for (TextField textField : textFieldList)
             textField.clear();
-        }
     }
 }

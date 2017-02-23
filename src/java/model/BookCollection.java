@@ -48,32 +48,37 @@ public class BookCollection extends EntityBase {
     }
 
     public Vector findBooksByBookId(String bookId) {
-        String query = "SELECT * FROM " + myTableName + " WHERE patronId LIKE '%" + bookId + "%'";
+        String query = "SELECT * FROM " + myTableName + " WHERE (bookId = " + bookId + ") ORDER BY author ASC";
         return runQuery(query);
     }
 
     public Vector findBooksByPubYear(String year) {
-        String query = "SELECT * FROM " + myTableName + " WHERE pubYear LIKE '%" + year + "%'";
+        String query = "SELECT * FROM " + myTableName + " WHERE pubYear LIKE '%" + year + "%' ORDER BY author ASC";
         return runQuery(query);
     }
 
     public Vector findBooksOlderThanDate(String year) {
-        String query = "SELECT * FROM " + myTableName + " WHERE (pubYear < " + year + ")";
+        String query = "SELECT * FROM " + myTableName + " WHERE (pubYear < " + year + ") ORDER BY author ASC";
         return runQuery(query);
     }
 
     public Vector findBooksNewerThanDate(String year) {
-        String query = "SELECT * FROM " + myTableName + " WHERE (pubYear > " + year + ")";
+        String query = "SELECT * FROM " + myTableName + " WHERE (pubYear > " + year + ") ORDER BY author ASC";
         return runQuery(query);
     }
 
     public Vector findBooksWithTitleLike(String title) {
-        String query = "SELECT * FROM " + myTableName + " WHERE title LIKE '%" + title + "%'";
+        String query = "SELECT * FROM " + myTableName + " WHERE title LIKE '%" + title + "%' ORDER BY author ASC";
         return runQuery(query);
     }
 
     public Vector findBooksWithAuthorLike(String author) {
-        String query = "SELECT * FROM " + myTableName + " WHERE author LIKE '%" + author + "%'";
+        String query = "SELECT * FROM " + myTableName + " WHERE author LIKE '%" + author + "%' ORDER BY author ASC";
+        return runQuery(query);
+    }
+
+    public Vector findBooksByStatus(String status) {
+        String query = "SELECT * FROM " + myTableName + " WHERE status LIKE '" + status + "%' ORDER BY author ASC";
         return runQuery(query);
     }
 

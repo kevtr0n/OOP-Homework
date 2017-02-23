@@ -45,57 +45,57 @@ public class PatronCollection extends EntityBase {
     }
 
     public Vector findPatronsByPatronId(String patronId) {
-        String query = "SELECT * FROM " + myTableName + " WHERE (patronId = " + patronId + ")";
+        String query = "SELECT * FROM " + myTableName + " WHERE (patronId = " + patronId + ") ORDER BY name ASC";
         return runQuery(query);
     }
 
     public Vector findPatronsByAddress(String address) {
-        String query = "SELECT * FROM " + myTableName + " WHERE (address = " + address + ")";
+        String query = "SELECT * FROM " + myTableName + " WHERE address LIKE '%" + address + "%' ORDER BY name ASC";
         return runQuery(query);
     }
 
     public Vector findPatronsByEmail(String email) {
-        String query = "SELECT * FROM " + myTableName + " WHERE (email = " + email + ")";
+        String query = "SELECT * FROM " + myTableName + " WHERE email LIKE '%" + email + "%' ORDER BY name ASC";
         return runQuery(query);
     }
 
     public Vector findPatronsByStatus(String status) {
-        String query = "SELECT * FROM " + myTableName + " WHERE (status = " + status + ")";
+        String query = "SELECT * FROM " + myTableName + " WHERE status LIKE '" + status + "%' ORDER BY name ASC";
         return runQuery(query);
     }
 
     public Vector findPatronsByDateOfBirth(String dateOfBirth) {
-        String query = "SELECT * FROM " + myTableName + " WHERE (birthDate = " + dateOfBirth + ")";
+        String query = "SELECT * FROM " + myTableName + " WHERE dateOfBirth LIKE '%" + dateOfBirth + "%' ORDER BY name ASC";
         return runQuery(query);
     }
 
     public Vector findPatronsOlderThan(String date) {
-        String query = "SELECT * FROM " + myTableName + " WHERE (dateOfBirth < " + date + ")";
+        String query = "SELECT * FROM " + myTableName + " WHERE (dateOfBirth < " + date + ") ORDER BY name ASC";
         return runQuery(query);
     }
 
     public Vector findPatronsYoungerThan(String date) {
-        String query = "SELECT * FROM " + myTableName + " WHERE (dateOfBirth > " + date + ")";
+        String query = "SELECT * FROM " + myTableName + " WHERE (dateOfBirth > " + date + ") ORDER BY name ASC";
         return runQuery(query);
     }
 
     public Vector findPatronsAtZipCode(String zip) {
-        String query = "SELECT * FROM " + myTableName + " WHERE zip LIKE '%" + zip + "%'";
+        String query = "SELECT * FROM " + myTableName + " WHERE zip LIKE '%" + zip + "%' ORDER BY name ASC";
         return runQuery(query);
     }
 
     public Vector findPatronsAtStateCode(String state) {
-        String query = "SELECT * FROM " + myTableName + " WHERE stateCode LIKE '%" + state + "%'";
+        String query = "SELECT * FROM " + myTableName + " WHERE stateCode LIKE '%" + state + "%' ORDER BY name ASC";
         return runQuery(query);
     }
 
     public Vector findPatronsAtCity(String city) {
-        String query = "SELECT * FROM " + myTableName + " WHERE city LIKE '%" + city + "%'";
+        String query = "SELECT * FROM " + myTableName + " WHERE city LIKE '%" + city + "%'ORDER BY name ASC";
         return runQuery(query);
     }
 
     public Vector findPatronsWithNameLike(String name) {
-        String query = "SELECT * FROM " + myTableName + " WHERE name LIKE '%" + name + "%'";
+        String query = "SELECT * FROM " + myTableName + " WHERE name LIKE '%" + name + "%' ORDER BY name ASC";
         return runQuery(query);
     }
 
